@@ -1,0 +1,132 @@
+
+/* caption {
+	caption-side: bottom;
+	Si colocas el título debajo de la tabla, los bordes de la tabla se extienden hasta los límites de caption
+}*/
+
+/* elementos tabla: formato base */
+
+table	{
+	margin: 45px;
+	width: 480px;
+	/* para que border-radius tenga efecto sobre los bordes de la tabla, necesitamos establecer border-collape: separate
+	pues sino, los bordes de las celdas de las esquinas se solapan con los de la tabla
+	Ver: http://www.w3.org/TR/css3-background/   CSS Backgrounds and Borders Module Level 3
+	 */
+	border-collapse: separate;
+	border-spacing: 0;
+	border-bottom: 5px solid black;
+	border-bottom-left-radius: 10px; /* border-radius: si 2 valores => 1º top-left and bottom-right, 2º lo otros dos... efectos colaterales */
+	border-bottom-right-radius: 10px;
+	/* empty-cells: hide;*/
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	text-align: left;
+}
+
+th	{
+	padding: 8px;
+	/* border-top: 4px solid #aabcfe;*/
+	border-bottom: 1px solid #fff;
+	/* para prevenir ante navegadores que no procesen selectores nivel 3 */
+	background-color: black; 
+	color: white;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+td	{
+	padding: 8px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #fff;
+	background: #e8edff; 
+	color: #669;
+}
+
+
+/* filas de títulos */
+
+
+/* impar. Código redundante
+	thead > tr:nth-child(odd) th { 
+	color: white;
+} */
+
+thead > tr:nth-child(even) th { /*par. Inconveniente si añadimos otra fila de títulos*/
+	background-color: teal;
+	text-align: center;
+}
+
+thead tr:first-child th:first-child {
+	border-top-left-radius: 15px;
+}
+
+thead > tr:first-child th:nth-child(2) {
+	border-top-right-radius: 15px;
+	text-align: right;
+}
+
+
+
+
+/* hover */
+
+tr:hover td	{
+	background: palegreen;
+	color: #339;
+}
+
+tr:hover td:last-child { /* última columna permanece azul */
+	background: #00F;
+	color: #339;
+}
+
+
+
+/* columnas  datos */
+
+td:first-child	{
+	background: #00F;
+	color: #FFF;
+	font-weight: bold;
+	text-align: right;
+}
+
+td:nth-child(2n+3) {
+	background: #C0C0C0 ;
+	text-align: center;
+
+}
+
+td:nth-child(2n+4) {
+	background: #FFF0F0;
+	text-align: center;
+}
+
+
+/* celda vacía: borde derecho */
+
+th:nth-last-of-type(1) { /* ojo: también selecciono jornada 18. Efecto colateral incorrecto */
+	width: 0.2px;	
+	}
+
+td:nth-last-of-type(1) {
+	width: 0.2px;	
+	border-bottom: 0;
+	background: #00F;
+	}
+
+
+/* bordes curvos inferiores tabla */
+
+tbody tr:last-child td {
+	/* elimino guía blanca separación legibilidad */
+	border-bottom: 0px;}
+
+tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 5px;
+	}
+
+tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 5px;
+	}
