@@ -1,0 +1,161 @@
+@font-face {
+	font-family: 'Bebasneue';
+	    src: url(../codigo/bebasneue-webfont.eot) format('embedded-opentype'),
+	         url(../codigo/bebasneue-webfont.woff) format('woff'),
+	         url(../codigo/bebasneue-webfont.ttf) format('truetype'),
+	         url(../codigo/bebasneue-webfont.svg) format('svg');
+}
+
+body{
+	font-size: 100%;
+	background-image: url(../codigo/bg.png);
+	background-repeat: repeat;
+}
+
+body>header{
+	outline: 1px solid red;
+	position: relative;
+	float:left;
+}
+
+h1{
+
+	border: 1px solid red;
+	float: left;
+	font-family: Bebasneue;
+	margin: 0%;
+}
+
+h1 em{
+	text-align: center;
+}
+
+nav {
+	outline: 1px solid red;
+	float: left;
+}
+nav ul li{
+	float: left;
+}
+
+a { 
+	text-decoration: none; 
+	color: black;
+}
+
+ul{
+	list-style-type: none;
+}
+
+nav a:visited{
+	color: #3B657D;
+}
+
+
+section#subtitulo{
+	background-image: url(../codigo/img-banner.png);
+	background-repeat: no-repeat;
+	clear:both;
+	float:left;
+	padding:0%;
+	outline: 1px solid red;
+	min-width: 1300px;
+	min-height: 320px;
+	position: relative;
+}
+
+section#subtitulo h2{
+	color: white;
+	background-color: black;
+	position: absolute;
+	left:95%;
+}
+
+section#viajeASudamerica a:hover{
+	color: #3B657D;
+	border-bottom: dashed 1px;
+}
+
+section#viajeASudamerica{
+	width: 1000px;
+	outline: 1px solid red;
+	margin: 0px;
+	padding:0px;
+	clear: both;
+	float:left;
+}
+
+
+aside{
+	margin: 0px;
+	padding:0px;
+	width: 19%;
+	min-width: 267px;
+	float: left;
+	box-shadow: 0px 0px 2px 1px #666
+}
+
+aside h3{
+	text-align: center
+}
+
+aside ul{
+	outline: 1px solid red;
+	padding:0%;
+	padding-top: 5%;
+	padding-bottom:5%;
+	position:relative;
+}
+aside ul li{
+	background-image: url(../codigo/bg-editor-e0ddc1.png);
+	background-repeat: repeat;
+	position:relative;
+	padding: 5%;
+}
+aside ul li a{
+	position:absolute;
+	bottom: 30%
+	}
+
+li#profesorChallenger{
+	list-style-image: url(../codigo/img-jason.jpeg);
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+li#edMalone{
+	list-style-image: url(../codigo/img-nick.jpeg);
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+li#gomez{
+	list-style-image: url(../codigo/img-tim.jpeg);
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+li#zambo{
+	list-style-image: url(../codigo/img-drew.png);
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+li#lordJohnRoxton{
+	list-style-image: url(../codigo/img-justin.jpeg);
+	list-style-type: none;
+	list-style-position: inside;
+}
+footer{
+	clear: both;
+	float:left;
+}
+footer ul{
+	padding: 0%;
+	margin:0%;
+	background-color: #3D667E;
+	float:left;
+}
+body footer ul li {
+	float: left;
+}
