@@ -16,3 +16,5 @@ Podemos encontrar lo siguiente:
 * Carpeta **CSS**, donde podemos encontrar nuestro codigo CSS para dar formato a la página HTML.
 * Una imagen **Arbol etiquetas mundo perdido**, donde tenemos el etiquetado de la página en forma de arbol.
 * Un **archivo HTML** con el codigo HTML de la pagina.
+
+> El ejercicio todavía esta en desarrollo
