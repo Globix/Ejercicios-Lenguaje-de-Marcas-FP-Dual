@@ -9,13 +9,17 @@ En esta carpeta se encuentran todos los ejercicios realizados en la asignatura d
 
 ### ¿Que puedo encontrar?
 
-En concreto encontraremos ejercicios de HTML y CSS, pero mas concretamente:
+* Ejercicios de HTML y CSS, mas concretamente:
+    * Ejercicios de posicionamiento.
+    * Ejercicios del libro [Learning Web Design][1].
+    * Ejercicios de tablas.
+* Ejercicios de [XML][2]:
+    * Instancias XML
+    * Schemas XSD
 
-* Ejercicios de posicionamiento.
-* Ejercicios del libro [Learning Web Design][1].
-* Ejercicios de tablas.
 
 Para mas información puede acceder a las distintas carpetas.
 
 
 [1]:http://www.learningwebdesign.com/
+[2]:http://www.w3schools.com/xml/default.asp
