@@ -40,5 +40,11 @@
 			<xsd:maxInclusive value="100"></xsd:maxInclusive>
 		</xsd:restriction>
 	</xsd:simpleType>
+	
+	<xsd:simpleType name="typePet">
+		<xsd:restriction base="xsd:integer">
+			<xsd:maxInclusive value="100"></xsd:maxInclusive>
+		</xsd:restriction>
+	</xsd:simpleType>
 
 </xsd:schema>

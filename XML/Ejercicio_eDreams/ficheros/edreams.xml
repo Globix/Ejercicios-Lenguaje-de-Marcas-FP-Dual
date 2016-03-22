@@ -16,10 +16,14 @@ xsi:schemaLocation="http://www.edreams.es edreams.xsd">
 		    <ed:month>03</ed:month>
 		    <ed:year>2016</ed:year>
 		</ed:return>
-		<ed:passengers>
+		<ed:passengers xsi:type="ed:extTypePassengers">
 			<ed:adult>1</ed:adult>
+			<ed:oldPerson>4</ed:oldPerson>
+			<ed:student>3</ed:student>
 			<ed:children>0</ed:children>
 			<ed:infant>0</ed:infant>
+			<ed:pet>1</ed:pet>
+			
 		</ed:passengers>
 	</ed:fly>
 </ed:flights>
