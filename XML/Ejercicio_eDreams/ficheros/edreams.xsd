@@ -81,7 +81,6 @@
 	<!-- Grupo de substitucion del tipo adulto -->
 	
 	<xsd:element name="adult" type="ed:typeAdult" default="1"></xsd:element>
-	
 	<xsd:element name="oldPerson" type="ed:typeAdult" substitutionGroup="ed:adult"></xsd:element>
 	<xsd:element name="student" type="ed:typeAdult" substitutionGroup="ed:adult"></xsd:element>
 
